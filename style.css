@@ -1,0 +1,1193 @@
+/* СБРОС + ОСНОВНЫЕ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:
+        'Rubik',
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background: linear-gradient(135deg, #f8f5f2 0%, #e8e2d9 50%, #f0ebe3 100%);
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fbf3e7;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+}
+
+.phone-link {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s;
+}
+
+.subtitle {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5a5a5a;
+    font-weight: 400;
+    width: 98%;
+    background: linear-gradient(
+        135deg,
+        rgba(248, 245, 242, 0.8) 0%,
+        rgba(232, 226, 217, 0.6) 100%
+    );
+    padding: 15px 20px;
+    border-radius: 12px;
+    border-left: 3px solid #8b7355;
+    margin-top: 10px;
+    box-shadow: 0 6px 20px rgba(139, 115, 85, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover .subtitle {
+    box-shadow: 0 10px 30px rgba(139, 115, 85, 0.15);
+    transform: translateY(-2px);
+}
+
+.phone-link:hover {
+    color: #0056b3;
+    transform: scale(1.05);
+}
+
+.header__nav ul {
+    display: flex;
+}
+
+.header__nav li + li {
+    margin-left: 25px;
+}
+
+.header__nav a {
+    font-size: 15px;
+    color: #2e2e2f;
+    transition: color 0.3s;
+}
+
+.header__nav a:hover {
+    color: #c3a075;
+}
+
+.header__nav a:active {
+    color: #0062b6;
+}
+
+/* ABOUT (HERO) */
+#About {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.about-content {
+    width: 100%;
+}
+
+.message {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #2c2c2c;
+    margin-bottom: 30px;
+}
+
+.hello {
+    color: #9b18f9d3;
+}
+
+.image {
+    width: 100%;
+}
+
+.btn {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2c2c2c;
+    background: linear-gradient(145deg, #f8f5f2, #e8e2d9);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow:
+        8px 0 15px rgba(139, 115, 85, 0.3),
+        -4px 0 8px rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: translateX(3px);
+    box-shadow:
+        12px 0 25px rgba(139, 115, 85, 0.4),
+        -6px 0 12px rgba(255, 255, 255, 0.9);
+}
+
+.btn:active {
+    transform: translateX(2px) translateY(1px);
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* SKILLS */
+#skills {
+    padding: 80px 0;
+    background: rgba(248, 245, 242, 0.5);
+}
+
+.skills-container {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 50px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 15px auto 0;
+    background: linear-gradient(90deg, #8b7355, #a89078);
+    border-radius: 2px;
+}
+
+.portfolio-title {
+    font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #2c3e50 0%, #8b7355 50%, #a89078 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.portfolio-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #8b7355, #a89078);
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+.portfolio-item:hover .portfolio-title::after {
+    width: 80px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.skill-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.skill-progress {
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.skill-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #8b7355, #a89078);
+    border-radius: 10px;
+    transition: width 2s ease;
+    width: 0;
+}
+
+.skill-percent {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8b7355;
+}
+
+/* PORTFOLIO */
+#Portfolio {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.portfolio-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-thumb {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: zoom-in;
+    transition: all 0.3s;
+}
+
+.portfolio-thumb:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* МОДАЛКА */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 95%;
+    max-width: 1400px;
+    max-height: 90%;
+    object-fit: contain;
+    padding-top: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    line-height: 1;
+}
+
+.close:hover {
+    color: #f1f1f1;
+}
+
+.one {
+    display: none;
+}
+
+.prices-section {
+    padding: 100px 0;
+    background: linear-gradient(
+        135deg,
+        rgba(248, 245, 242, 0.7) 0%,
+        rgba(232, 226, 217, 0.5) 100%
+    );
+    text-align: center;
+}
+
+.prices-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 15px;
+}
+
+.price-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 35px 30px 45px;
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    transition: all 0.3s;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.price-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #8b7355;
+    margin: 15px 0 20px;
+}
+
+.buy-btn {
+    padding: 14px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #f8f5f2, #e8e2d9);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s;
+    box-shadow: 0 8px 25px rgba(139, 115, 85, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: auto;
+}
+
+.buy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(139, 115, 85, 0.3);
+}
+
+/* FOOTER */
+.footer {
+    padding: 60px 0 30px;
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.footer-brand h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.link-group h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.link-group a {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.link-group a:hover {
+    color: #8b7355;
+}
+
+.footer-contact h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.phone {
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.footer-contact p {
+    opacity: 0.7;
+    font-size: 13px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 25px;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 13px;
+}
+
+/* АДАПТИВНОСТЬ ДЛЯ РАЗЛИЧНЫХ УСТРОЙСТВ */
+
+/* МОБИЛЬНЫЕ УСТРОЙСТВА (320px - 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header {
+        padding: 12px 0;
+    }
+
+    .logo {
+        width: 35px;
+    }
+
+    .phone-link {
+        font-size: 14px;
+        gap: 4px;
+    }
+
+    .header__nav ul {
+        display: none;
+    }
+    .image{
+        display: none;
+    }
+    #About {
+        padding-top: 70px;
+    }
+
+    .message {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 13px;
+        letter-spacing: 0.8px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+
+    .section-title::after {
+        width: 50px;
+        height: 2px;
+    }
+
+    .skills-grid {
+        gap: 25px;
+    }
+
+    .skill-card {
+        padding: 25px 20px;
+    }
+
+    .skill-icon {
+        font-size: 2rem;
+    }
+
+    .skill-title {
+        font-size: 1.1rem;
+    }
+
+    #skills {
+        padding: 60px 0;
+    }
+
+    #Portfolio {
+        padding: 60px 0;
+    }
+
+    .portfolio-grid {
+        gap: 30px;
+    }
+
+    .portfolio-item {
+        padding: 25px;
+    }
+
+    .portfolio-thumb {
+        height: 200px;
+    }
+
+    .prices-section {
+        padding: 80px 0;
+    }
+
+    .prices-grid {
+        gap: 30px;
+    }
+
+    .price-card {
+        padding: 30px 25px 40px;
+    }
+
+    .price-img {
+        height: 250px;
+    }
+
+    .price {
+        font-size: 1.8rem;
+    }
+
+    .buy-btn {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 50px 0 25px;
+    }
+
+    .footer-content {
+        gap: 30px;
+        margin-bottom: 35px;
+    }
+
+    .footer-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer-brand h3 {
+        font-size: 1.3rem;
+    }
+
+    .link-group h4 {
+        font-size: 0.9rem;
+    }
+
+    .phone {
+        font-size: 1rem;
+    }
+}
+
+/* ПЛАНШЕТЫ (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header {
+        padding: 14px 0;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .phone-link {
+        font-size: 15px;
+        gap: 6px;
+    }
+
+    .header__nav ul {
+        display: none;
+    }
+
+    #About {
+        padding-top: 75px;
+    }
+
+    .message {
+        font-size: 1.7rem;
+        margin-bottom: 28px;
+    }
+
+    .btn {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 45px;
+    }
+
+    .section-title::after {
+        width: 55px;
+    }
+
+    .skills-grid {
+        gap: 28px;
+    }
+
+    .skill-card {
+        padding: 28px 23px;
+    }
+
+    .skill-icon {
+        font-size: 2.2rem;
+    }
+
+    #skills {
+        padding: 70px 0;
+    }
+
+    #Portfolio {
+        padding: 70px 0;
+    }
+
+    .portfolio-grid {
+        gap: 35px;
+    }
+
+    .portfolio-item {
+        padding: 28px;
+    }
+
+    .portfolio-thumb {
+        height: 230px;
+    }
+
+    .prices-section {
+        padding: 90px 0;
+    }
+
+    .prices-grid {
+        gap: 35px;
+    }
+
+    .price-card {
+        padding: 32px 28px 43px;
+    }
+
+    .price-img {
+        height: 280px;
+    }
+
+    .price {
+        font-size: 1.9rem;
+    }
+
+    .footer {
+        padding: 55px 0 28px;
+    }
+
+    .footer-content {
+        gap: 35px;
+        margin-bottom: 38px;
+    }
+
+    .footer-logo {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* МАЛЕНЬКИЕ НОУТБУКИ / ПЛАНШЕТЫ В ЛАНДШАФТЕ (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .logo {
+        width: 45px;
+    }
+
+    .phone-link {
+        font-size: 16px;
+        gap: 7px;
+    }
+
+    .header__nav ul {
+        display: flex;
+    }
+
+    .header__nav li + li {
+        margin-left: 20px;
+    }
+
+    .header__nav a {
+        font-size: 14px;
+    }
+
+    #About {
+        padding-top: 80px;
+    }
+
+    .message {
+        font-size: 1.9rem;
+        margin-bottom: 32px;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 2.1rem;
+        margin-bottom: 48px;
+    }
+
+    .section-title::after {
+        width: 58px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .skill-card {
+        padding: 30px 25px;
+    }
+
+    .skill-icon {
+        font-size: 2.4rem;
+    }
+
+    #skills {
+        padding: 75px 0;
+    }
+
+    #Portfolio {
+        padding: 75px 0;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 38px;
+    }
+
+    .portfolio-item {
+        padding: 30px;
+    }
+
+    .portfolio-thumb {
+        height: 260px;
+    }
+
+    .prices-section {
+        padding: 95px 0;
+    }
+
+    .prices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 38px;
+    }
+
+    .price-card {
+        padding: 34px 29px 44px;
+    }
+
+    .price-img {
+        height: 290px;
+    }
+
+    .price {
+        font-size: 2.1rem;
+    }
+
+    .footer {
+        padding: 58px 0 29px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 38px;
+        margin-bottom: 39px;
+    }
+
+    .footer-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* СТАНДАРТНЫЕ ДЕСКТОПЫ (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .header {
+        padding: 16px 0;
+    }
+
+    .logo {
+        width: 48px;
+    }
+
+    .phone-link {
+        font-size: 16px;
+        gap: 7px;
+    }
+
+    .header__nav li + li {
+        margin-left: 28px;
+    }
+
+    .header__nav a {
+        font-size: 15px;
+    }
+
+    #About {
+        padding-top: 85px;
+    }
+
+    .message {
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+
+    .btn {
+        padding: 16px 32px;
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 2.3rem;
+        margin-bottom: 52px;
+    }
+
+    .section-title::after {
+        width: 62px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+    .skill-card {
+        padding: 32px 27px;
+    }
+
+    .skill-icon {
+        font-size: 2.6rem;
+    }
+
+    #skills {
+        padding: 80px 0;
+    }
+
+    #Portfolio {
+        padding: 80px 0;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px;
+    }
+
+    .portfolio-item {
+        padding: 32px;
+    }
+
+    .portfolio-thumb {
+        height: 280px;
+    }
+
+    .prices-section {
+        padding: 105px 0;
+    }
+
+    .prices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px;
+    }
+
+    .price-card {
+        padding: 36px 31px 46px;
+    }
+
+    .price-img {
+        height: 310px;
+    }
+
+    .price {
+        font-size: 2.2rem;
+    }
+
+    .footer {
+        padding: 62px 0 31px;
+    }
+
+    .footer-content {
+        grid-template-columns: 2fr 1fr 2fr;
+        gap: 42px;
+        margin-bottom: 42px;
+    }
+
+    .footer-logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+/* БОЛЬШИЕ ДЕСКТОПЫ (1441px+) */
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .phone-link {
+        font-size: 18px;
+        gap: 8px;
+    }
+
+    .header__nav li + li {
+        margin-left: 40px;
+    }
+
+    .header__nav a {
+        font-size: 16px;
+    }
+
+    #About {
+        padding-top: 100px;
+    }
+
+    .message {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .btn {
+        padding: 18px 35px;
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        margin-bottom: 80px;
+    }
+
+    .section-title::after {
+        width: 80px;
+        height: 4px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .skill-card {
+        padding: 40px 30px;
+    }
+
+    .skill-icon {
+        font-size: 3.5rem;
+    }
+
+    #skills {
+        padding: 120px 0;
+    }
+
+    #Portfolio {
+        padding: 120px 0;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+
+    .portfolio-item {
+        padding: 40px;
+    }
+
+    .portfolio-thumb {
+        height: 300px;
+    }
+
+    .prices-section {
+        padding: 140px 0;
+    }
+
+    .prices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+
+    .price-card {
+        padding: 45px 40px 55px;
+    }
+
+    .price-img {
+        height: 360px;
+    }
+
+    .price {
+        font-size: 2.5rem;
+    }
+
+    .buy-btn {
+        padding: 16px 40px;
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 80px 0 40px;
+    }
+
+    .footer-content {
+        grid-template-columns: 2fr 1fr 2fr;
+        gap: 90px;
+        margin-bottom: 50px;
+    }
+
+    .footer-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 130px;
+    }
+
+    .footer-brand h3 {
+        font-size: 1.6rem;
+    }
+
+    .link-group h4 {
+        font-size: 1rem;
+    }
+
+    .phone {
+        font-size: 1.3rem;
+    }
+}
