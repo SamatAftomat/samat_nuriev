@@ -63,11 +63,9 @@ body {
 	color: #5a5a5a;
 	font-weight: 400;
 	width: 98%;
-	background: linear-gradient(
-		135deg,
-		rgba(248, 245, 242, 0.8) 0%,
-		rgba(232, 226, 217, 0.6) 100%
-	);
+	background: linear-gradient(135deg,
+			rgba(248, 245, 242, 0.8) 0%,
+			rgba(232, 226, 217, 0.6) 100%);
 	padding: 15px 20px;
 	border-radius: 12px;
 	border-left: 3px solid #8b7355;
@@ -90,7 +88,7 @@ body {
 	display: flex;
 }
 
-.header__nav li + li {
+.header__nav li+li {
 	margin-left: 25px;
 }
 
@@ -180,7 +178,7 @@ body {
 }
 
 /* SKILLS */
-#skills {
+/* #skills {
 	padding: 80px 0;
 	background: rgba(248, 245, 242, 0.5);
 }
@@ -204,6 +202,44 @@ body {
 	margin: 15px auto 0;
 	background: linear-gradient(90deg, #8b7355, #a89078);
 	border-radius: 2px;
+} */
+
+#skills {
+	padding: 80px 0;
+	background: rgba(255, 255, 255, 0.05);
+	/* Твой фон */
+}
+
+.skills-container {
+	text-align: center;
+}
+
+.section-title {
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: #2c3e50;
+	margin-bottom: 30px;
+}
+
+.skills__hard,
+.skills__soft {
+	margin-bottom: 60px;
+}
+
+.hard__title,
+.soft__title {
+	font-size: 2.2rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 40px;
+	color: white;
+}
+
+.skills__hard__cards,
+.skills__soft__cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
 }
 
 .portfolio-title {
@@ -232,65 +268,93 @@ body {
 	transition: width 0.4s ease;
 }
 
-.portfolio-item:hover .portfolio-title::after {
-	width: 80px;
-}
-
-.skills-grid {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 30px;
-}
-
 .skill-card {
-	background: rgba(255, 255, 255, 0.9);
-	padding: 30px 25px;
-	border-radius: 20px;
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-	transition: all 0.4s;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	backdrop-filter: blur(10px);
-}
-
-.skill-card:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
-}
-
-.skill-icon {
-	font-size: 2.5rem;
-	margin-bottom: 15px;
-	display: block;
-}
-
-.skill-title {
-	font-size: 1.3rem;
-	font-weight: 700;
-	color: #2c3e50;
-	margin-bottom: 15px;
-}
-
-.skill-progress {
-	width: 100%;
-	height: 10px;
-	background: #f0f0f0;
-	border-radius: 10px;
+	background: white;
+	backdrop-filter: blur(20px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	padding: 20px;
+	height: 100px;
+	/* Невысокие */
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	cursor: pointer;
+	transition: all 0.3s ease;
 	overflow: hidden;
-	margin-bottom: 8px;
+
+	&:hover {
+		/* background: rgba(255, 255, 255, 0.2); */
+		border-color: rgba(102, 126, 234, 0.5);
+		transform: translateX(10px);
+		/* Длинный эффект hover */
+		box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+	}
+
+	.skill-icon {
+		font-size: 2.2rem;
+		flex-shrink: 0;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 12px;
+	}
+
+	.skill-content {
+		flex: 1;
+		color: rgb(0, 0, 0);
+
+		h4 {
+			font-size: 1.2rem;
+			font-weight: 700;
+			margin-bottom: 4px;
+			white-space: nowrap;
+		}
+
+		.skill-level {
+			font-size: 0.9rem;
+			opacity: 0.9;
+			font-weight: 500;
+		}
+	}
 }
 
-.skill-bar {
-	height: 100%;
-	background: linear-gradient(90deg, #8b7355, #a89078);
-	border-radius: 10px;
-	transition: width 2s ease;
-	width: 0;
+.skill-card.html:hover {
+	border-color: #ef4444;
 }
 
-.skill-percent {
-	font-size: 1rem;
-	font-weight: 600;
-	color: #8b7355;
+.skill-card.css:hover {
+	border-color: #3b82f6;
+}
+
+.skill-card.js:hover {
+	border-color: #f59e0b;
+}
+
+.skill-card.php:hover {
+	border-color: #10b981;
+}
+
+.skill-card.communication:hover {
+	border-color: #8b5cf6;
+}
+
+/* Мобильный */
+@media (max-width: 768px) {
+
+	.skills__hard__cards,
+	.skills__soft__cards {
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+
+	.skill-card {
+		height: 90px;
+		padding: 18px;
+	}
 }
 
 /* PORTFOLIO */
@@ -335,6 +399,13 @@ body {
 	margin-bottom: 20px;
 	cursor: zoom-in;
 	transition: all 0.3s;
+}
+
+.skill-title {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: #2c3e50;
+	margin-bottom: 15px;
 }
 
 .portfolio-thumb:hover {
@@ -383,14 +454,13 @@ body {
 .one {
 	display: none;
 }
+
 /* Prices */
 .prices-section {
 	padding: 100px 0;
-	background: linear-gradient(
-		135deg,
-		rgba(248, 245, 242, 0.7) 0%,
-		rgba(232, 226, 217, 0.5) 100%
-	);
+	background: linear-gradient(135deg,
+			rgba(248, 245, 242, 0.7) 0%,
+			rgba(232, 226, 217, 0.5) 100%);
 	text-align: center;
 }
 
@@ -571,9 +641,11 @@ body {
 	.header__nav ul {
 		display: none;
 	}
+
 	.image {
 		display: none;
 	}
+
 	#About {
 		padding-top: 70px;
 	}
@@ -823,7 +895,7 @@ body {
 		display: flex;
 	}
 
-	.header__nav li + li {
+	.header__nav li+li {
 		margin-left: 20px;
 	}
 
@@ -948,7 +1020,7 @@ body {
 		gap: 7px;
 	}
 
-	.header__nav li + li {
+	.header__nav li+li {
 		margin-left: 28px;
 	}
 
@@ -1074,7 +1146,7 @@ body {
 		gap: 8px;
 	}
 
-	.header__nav li + li {
+	.header__nav li+li {
 		margin-left: 40px;
 	}
 
