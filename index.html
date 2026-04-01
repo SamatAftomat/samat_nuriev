@@ -16,6 +16,7 @@
     <header class="header">
         <div class="container header__container">
             <a href="/index.html"><img src="img/programmer.png" alt="" class="logo"></a>
+
             <div class="header__nav">
                 <ul>
                     <li><a href="#About">Обо мне</a></li>
@@ -232,7 +233,7 @@
 
     <section id="prices" class="prices-section">
         <div class="container">
-            <h2 class="section-title">Продукты</h2> <!-- Теперь по центру -->
+            <h2 class="section-title">Продукты</h2>
             <div class="prices-grid">
                 <!-- ПРОДУКТ 1 -->
                 <div class="price-card">
@@ -243,8 +244,7 @@
                         4 папки • 15+ плагинов • DataviewJS<br>
                         Граф • Шаблоны • Инструкция
                     </p>
-                    <a href="#contacts"><button class="buy-btn"
-                            onclick="alert('Для заказа вы можете написать на телеграмм,whatsapp.')">Заказать</button></a>
+                    <a href="#contacts"><button class="buy-btn" onclick="Click()">Заказать</button></a>
                 </div>
 
                 <!-- ПРОДУКТ 2 -->
@@ -255,8 +255,7 @@
                     <p class="portfolio-title">
                         HTML/CSS/JS • Адаптив
                     </p>
-                    <a href="#contacts"><button class="buy-btn"
-                            onclick="alert('Для заказа вы можете написать на телеграмм,whatsapp.')">Заказать</button></a>
+                    <a href="#contacts"><button class="buy-btn" onclick="Click()">Заказать</button></a>
                 </div>
 
                 <!-- ПРОДУКТ 3 -->
@@ -267,8 +266,7 @@
                     <p class="portfolio-title">
                         PHP • MySQL • Отправка email писем и т.д
                     </p>
-                    <a href="#contacts"><button class="buy-btn"
-                            onclick="alert('Для заказа вы можете написать на телеграмм,whatsapp.')">Заказать</button></a>
+                    <a href="#contacts"><button class="buy-btn" onclick="Click()">Заказать</button></a>
                 </div>
 
                 <!-- ПРОДУКТ 4 -->
@@ -279,8 +277,7 @@
                     <p class="portfolio-title">
                         HTML/CSS/JS • Адаптив
                     </p>
-                    <a href="#contacts"><button class="buy-btn"
-                            onclick="alert('Для заказа вы можете написать на телеграмм,whatsapp.')">Заказать</button></a>
+                    <a href="#contacts"><button class="buy-btn" onclick="Click()">Заказать</button></a>
                 </div>
 
                 <div class="price-card">
@@ -290,8 +287,7 @@
                     <p class="portfolio-title">
                         Wordpress
                     </p>
-                    <a href="#contacts"><button class="buy-btn"
-                            onclick="alert('Для заказа вы можете написать на телеграмм,whatsapp.')">Заказать</button></a>
+                    <a href="#contacts"><button class="buy-btn" onclick="Click()">Заказать</button></a>
                 </div>
             </div>
         </div>
@@ -305,7 +301,7 @@
 
                     <a href="/index.html"><img src="img/programmer.png" alt="" class="logo"></a>
                     <h3>Нуриев Самат</h3>
-                    <p>Frontend • Obsidian • Боты • Shorts</p>
+                    <p>Frontend • Obsidian • Shorts</p>
                 </div>
 
 
@@ -316,15 +312,17 @@
                         <h4>Продукты</h4>
                         <a href="#prices">Obsidian</a>
                         <a href="#prices">Сайты</a>
-                        <a href="#prices">Боты</a>
+                        <a href="#prices">Wordpress</a>
                     </div>
                     <div class="link-group">
-                        <h4>Социальные сети</h4>
+                        <h4>Соц.сети</h4>
                         <a href="https://t.me/NurievSamat" target="_blank">
                             Telegram
                         </a>
-
-                        <a href="https://www.youtube.com/@СаматНуриев2000">YouTube</a>
+                        <a href="https://dl.bip.com/Ga6MQpod" target="_blank">
+                            Bip
+                        </a>
+                        <a href="https://vk.com/samatnuriev2013" target="_blank">Вк</a>
                         <a href="https://kwork.ru/user/samatnuriev2013">Kwork</a>
                     </div>
                 </div>
@@ -347,7 +345,9 @@
 
 
     <script>
-
+        function Click() {
+            alert('Свяжитесь с нами через Telegram, ВКонтакте, Bip, Kwork или электронную почту, чтобы оформить заказ.')
+        }
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();  // Останавливаем прыжок

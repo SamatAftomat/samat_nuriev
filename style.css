@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 }
 
+
 body {
 	font-family:
 		'Rubik',
@@ -567,6 +568,7 @@ body {
 	grid-template-columns: 1fr;
 	gap: 30px;
 }
+
 
 .link-group h4 {
 	font-size: 0.95rem;
