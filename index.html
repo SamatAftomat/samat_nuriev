@@ -74,7 +74,7 @@
 
                         <div class="skill-content">
                             <h4>CSS</h4>
-                            <span class="skill-level">Scss/Sass, Animation, Bootstrap, БЭМ</span>
+                            <span class="skill-level">Scss/Sass, Animation, Bootstrap, БЭМ, Tailwind</span>
                         </div>
                     </div>
 
@@ -114,7 +114,7 @@
                             <span class="skill-level">GIT,GITHUB,AI</span>
                         </div>
                     </div>
-                    <div class="skill-card js">
+                    <div class="skill-card php">
 
                         <div class="skill-content">
                             <h4>Obsidian</h4>
@@ -124,7 +124,7 @@
                         </div>
 
                     </div>
-                    <div class="skill-card js">
+                    <div class="skill-card html">
 
                         <div class="skill-content">
                             <h4>Монтаж</h4>
@@ -389,7 +389,38 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') modal.style.display = 'none';
         });
+        // Бургер-меню
+        document.addEventListener('DOMContentLoaded', function () {
+            // Создаём кнопку бургера, если её нет в HTML
+            if (!document.querySelector('.burger')) {
+                const burgerDiv = document.createElement('div');
+                burgerDiv.className = 'burger';
+                burgerDiv.innerHTML = '<span></span><span></span><span></span>';
+                const headerContainer = document.querySelector('.header__container');
+                if (headerContainer) {
+                    headerContainer.appendChild(burgerDiv);
+                }
+            }
 
+            const burger = document.querySelector('.burger');
+            const navMenu = document.querySelector('.header__nav ul');
+
+            if (burger && navMenu) {
+                burger.addEventListener('click', function () {
+                    burger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // Закрытие меню при клике на ссылку
+                const navLinks = document.querySelectorAll('.header__nav a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        burger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+        });
 
 
     </script>

@@ -1128,6 +1128,11 @@ body {
 		gap: 40px;
 	}
 }
+@media (max-width: 600px) {
+	.image{
+		display: none;
+	}
+}
 
 /* БОЛЬШИЕ ДЕСКТОПЫ (1441px+) */
 @media (min-width: 1441px) {
@@ -1270,5 +1275,156 @@ body {
 
 	.phone {
 		font-size: 1.3rem;
+	}
+}
+/* ===== MEDIA QUERIES ===== */
+
+/* Планшеты (до 768px) */
+@media (max-width: 768px) {
+	.header__container {
+		position: relative;
+		justify-content: center;
+		/* Центрируем всё содержимое */
+		gap: 15px;
+		flex-wrap: wrap;
+	}
+
+	/* Логотип слева */
+	
+	/* Номер телефона по центру */
+	.phone-link {
+		order: 1;
+		font-size: 15px;
+		margin: 0 auto;
+	}
+
+	/* Скрываем обычную навигацию */
+	.header__nav {
+		position: static;
+	}
+
+	.header__nav ul {
+		display: none;
+		/* Скрыто по умолчанию */
+		position: fixed;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 70px);
+		background-color: #fbf3e7;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding-top: 40px;
+		gap: 25px;
+		z-index: 99;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	}
+
+	.header__nav ul.active {
+		display: flex;
+		/* Показываем при открытии */
+	}
+
+	.header__nav li {
+		margin-left: 0 !important;
+	}
+
+	.header__nav a {
+		font-size: 18px;
+		padding: 8px 0;
+		display: block;
+	}
+
+	/* Кнопка бургер-меню */
+	.burger {
+		display: block;
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 28px;
+		height: 22px;
+		cursor: pointer;
+		z-index: 101;
+	}
+
+	.burger span {
+		display: block;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		background: #2e2e2f;
+		border-radius: 3px;
+		transition: all 0.3s ease;
+	}
+
+	.burger span:nth-child(1) {
+		top: 0;
+	}
+
+	.burger span:nth-child(2) {
+		top: 9px;
+	}
+
+	.burger span:nth-child(3) {
+		top: 18px;
+	}
+
+	/* Анимация бургера в крестик */
+	.burger.active span:nth-child(1) {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+
+	.burger.active span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.burger.active span:nth-child(3) {
+		transform: rotate(-45deg);
+		top: 9px;
+	}
+}
+
+/* Мобильные телефоны (до 480px) */
+@media (max-width: 480px) {
+	.header {
+		padding: 10px 0;
+	}
+
+	
+
+	.phone-link {
+		font-size: 13px;
+		order: 1;
+	}
+
+	.burger {
+		right: 10px;
+		width: 24px;
+		height: 20px;
+	}
+
+	.burger span {
+		height: 2.5px;
+	}
+
+	.header__nav ul {
+		top: 60px;
+		height: calc(100vh - 60px);
+		padding-top: 30px;
+		gap: 20px;
+	}
+
+	.header__nav a {
+		font-size: 16px;
+	}
+}
+
+/* Для устройств шире 769px — бургер НЕ показываем */
+@media (min-width: 769px) {
+	.burger {
+		display: none;
 	}
 }
