@@ -413,7 +413,28 @@ body {
 	transform: scale(1.02);
 	box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
 }
+/* СТЕК ТЕХНОЛОГИЙ */
+.portfolio-tech-stack {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 10px;
+}
 
+.tech-badge {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	padding: 5px 14px;
+	border-radius: 50px;
+	font-size: 0.75rem;
+	font-weight: 500;
+	transition: transform 0.2s ease;
+}
+
+.tech-badge:hover {
+	transform: scale(1.05);
+}
 /* МОДАЛКА */
 .modal {
 	display: none;
