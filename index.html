@@ -2,500 +2,322 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Самат Нуриев</title>
-		<link
-			rel="shortcut icon"
-			href="img/programmer.png"
-			type="image/x-icon"
-		/>
-		<link
-			rel="stylesheet"
-			href="style.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="reset.css"
-		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Самат Нуриев | Fullstack-разработчик & Web Expert</title>
+		<link rel="shortcut icon" href="img/programmer.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="reset.css" />
 	</head>
 
 	<body>
 		<!-- HEADER -->
 		<header class="header">
 			<div class="container header__container">
-				<a href="/index.html">
-					<img
-						src="img/programmer.png"
-						alt=""
-						class="logo"
-					/>
+				<a href="/index.html" class="logo-wrapper">
+					<img src="img/programmer.png" alt="Самат Нуриев" class="logo" />
+					<span class="logo-text">Самат Нуриев</span>
 				</a>
 
-				<div class="header__nav">
-					<ul>
+				<nav class="header__nav">
+					<ul class="nav-menu">
 						<li><a href="#About">Обо мне</a></li>
 						<li><a href="#skills">Навыки</a></li>
 						<li><a href="#Portfolio">Портфолио</a></li>
 						<li><a href="#prices">Продукты</a></li>
 						<li><a href="#contacts">Контакты</a></li>
+						<li class="mobile-only">
+							<a class="phone-link-mobile" href="tel:+79872894826">📞 +7 (987) 289-48-26</a>
+						</li>
 					</ul>
-				</div>
-				<a
-					class="phone-link"
-					href="tel:+79872894826"
-				>
-					+7 (987) 289-48-26
+				</nav>
+				
+				<a class="phone-link" href="tel:+79872894826">
+					<span class="phone-icon">📞</span> +7 (987) 289-48-26
 				</a>
+
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</div>
 		</header>
 
-		<!-- ABOUT -->
-		<section
-			class="container"
-			id="About"
-		>
-			<div class="about-content">
-				<div class="message">
-					<span class="hello">Привет!</span>
-					Меня зовут
-					<br />
-					Нуриев Самат.
-					<br />
-					Я Fullstack-разработчик, Obsidian-эксперт, монтажёр. Больше о моих
-					навыках узнайте после того, как нажмете кнопку ниже.
+		<!-- HERO SECTION -->
+		<section class="hero-section" id="About">
+			<div class="container hero-container">
+				<div class="about-content" data-aos="fade-right">
+					<div class="badge">🚀 Доступен для заказов</div>
+					<h1 class="hero-title">
+						<span class="hello">Привет!</span> Меня зовут Самат.<br>
+						создаю <span class="accent-text">высококонверсионные</span> веб-решения
+					</h1>
+					<p class="message">
+						Я Fullstack-разработчик, Obsidian-эксперт и монтажёр. Разрабатываю архитектуру сайтов «под ключ» от идеи до бэкенда. Нажмите кнопку ниже, чтобы посмотреть стек технологий.
+					</p>
+					<div class="hero-btns">
+						<a href="#skills" class="btn btn-primary">Смотреть навыки</a>
+						<a href="#Portfolio" class="btn btn-secondary">Мои работы</a>
+					</div>
 				</div>
-				<a href="#skills"><button class="btn">Смотреть навыки</button></a>
-			</div>
-			<div class="image">
-				<img
-					src="img/About.png"
-					alt="Самат Нуриев"
-				/>
+				<div class="image-wrapper" data-aos="fade-left">
+					<div class="hero-circle"></div>
+					<img src="img/About.png" alt="Самат Нуриев" class="hero-img" />
+				</div>
 			</div>
 		</section>
 
 		<!-- SKILLS -->
-		<section id="skills">
+		<section id="skills" class="skills-section">
 			<div class="container skills-container">
-				<h2 class="section-title">Мои навыки</h2>
+				<h2 class="section-title" data-aos="fade-up">Мои навыки</h2>
 
-				<!-- HARD SKILLS -->
 				<div class="skills__hard">
-					<h3 class="hard__title">
-						<span class="hello">Hard</span>
-						скилы
-					</h3>
-					<div class="skills__hard__cards">
-						<div class="skill-card html">
-							<div class="skill-content">
-								<h4>HTML</h4>
-								<span class="skill-level">HTML5</span>
-							</div>
+					<h3 class="hard__title" data-aos="fade-up"><span class="hello">Hard</span> скилы</h3>
+					<div class="skills__grid">
+						<div class="skill-card html" data-aos="fade-up" data-aos-delay="50">
+							<div class="skill-icon-box">🌐</div>
+							<div class="skill-content"><h4>HTML</h4><span class="skill-level">HTML5</span></div>
 						</div>
-
-						<div class="skill-card css">
-							<div class="skill-content">
-								<h4>CSS</h4>
-								<span class="skill-level">
-									Scss/Sass, Animation, Bootstrap, БЭМ, Tailwind
-								</span>
-							</div>
+						<div class="skill-card css" data-aos="fade-up" data-aos-delay="100">
+							<div class="skill-icon-box">🎨</div>
+							<div class="skill-content"><h4>CSS</h4><span class="skill-level">Scss/Sass, Animation, Bootstrap, БЭМ, Tailwind</span></div>
 						</div>
-
-						<div class="skill-card js">
-							<div class="skill-content">
-								<h4>JavaScript</h4>
-								<span class="skill-level">
-									Vue js,node js(не много),TypeScript,React
-								</span>
-							</div>
+						<div class="skill-card js" data-aos="fade-up" data-aos-delay="150">
+							<div class="skill-icon-box">⚡</div>
+							<div class="skill-content"><h4>JavaScript</h4><span class="skill-level">Vue js, node js, TypeScript, React</span></div>
 						</div>
-
-						<div class="skill-card php">
-							<div class="skill-content">
-								<h4>Бэкенд</h4>
-								<span class="skill-level">PHP8,Mysql</span>
-							</div>
+						<div class="skill-card php" data-aos="fade-up" data-aos-delay="200">
+							<div class="skill-icon-box">⚙️</div>
+							<div class="skill-content"><h4>Бэкенд</h4><span class="skill-level">PHP8, Mysql</span></div>
 						</div>
-						<div class="skill-card html">
-							<div class="skill-content">
-								<h4>CMS</h4>
-								<span class="skill-level">WORDPRESS, TEXTOLITE</span>
-							</div>
+						<div class="skill-card html" data-aos="fade-up" data-aos-delay="250">
+							<div class="skill-icon-box">📝</div>
+							<div class="skill-content"><h4>CMS</h4><span class="skill-level">WORDPRESS, TEXTOLITE</span></div>
 						</div>
-						<div class="skill-card css">
-							<div class="skill-content">
-								<h4>ДИЗАЙН</h4>
-								<span class="skill-level">Figma, Photoshop</span>
-							</div>
+						<div class="skill-card css" data-aos="fade-up" data-aos-delay="300">
+							<div class="skill-icon-box">📐</div>
+							<div class="skill-content"><h4>ДИЗАЙН</h4><span class="skill-level">Figma, Photoshop</span></div>
 						</div>
-						<div class="skill-card js">
-							<div class="skill-content">
-								<h4>Инструменты</h4>
-								<span class="skill-level">GIT,GITHUB,AI,npm,Vite</span>
-							</div>
+						<div class="skill-card js" data-aos="fade-up" data-aos-delay="350">
+							<div class="skill-icon-box">🛠️</div>
+							<div class="skill-content"><h4>Инструменты</h4><span class="skill-level">GIT, GITHUB, AI, npm, Vite</span></div>
 						</div>
-						<div class="skill-card php">
-							<div class="skill-content">
-								<h4>Obsidian</h4>
-								<span class="skill-level">
-									Более 15 плагинов, красивый дизайн
-								</span>
-							</div>
+						<div class="skill-card php" data-aos="fade-up" data-aos-delay="400">
+							<div class="skill-icon-box">🔮</div>
+							<div class="skill-content"><h4>Obsidian</h4><span class="skill-level">Более 15 плагинов, красивый дизайн</span></div>
 						</div>
-						<div class="skill-card html">
-							<div class="skill-content">
-								<h4>Монтаж</h4>
-								<span class="skill-level">CupCat, свой ютуб канал</span>
-							</div>
+						<div class="skill-card html" data-aos="fade-up" data-aos-delay="450">
+							<div class="skill-icon-box">🎬</div>
+							<div class="skill-content"><h4>Монтаж</h4><span class="skill-level">CapCut, свой ютуб канал</span></div>
 						</div>
 					</div>
 				</div>
 
-				<!-- SOFT SKILLS -->
 				<div class="skills__soft">
-					<h3 class="soft__title">
-						<span class="hello">Soft</span>
-						скилы
-					</h3>
-					<div class="skills__soft__cards">
-						<div
-							class="skill-card communication"
-							data-short="Коммуникация"
-						>
+					<h3 class="soft__title" data-aos="fade-up"><span class="hello">Soft</span> скилы</h3>
+					<div class="skills__grid soft-grid">
+						<div class="skill-card-soft" data-aos="zoom-in" data-aos-delay="50">
 							<div class="skill-icon">🗣️</div>
-							<div class="skill-content">
-								<h4 data-short="Коммуникация">Коммуникация</h4>
-								<span class="skill-level">с дизайнерами и разработчиками</span>
-							</div>
+							<h4>Коммуникация</h4>
+							<p>с дизайнерами и разработчиками</p>
 						</div>
-
-						<div class="skill-card deadlines">
+						<div class="skill-card-soft" data-aos="zoom-in" data-aos-delay="100">
 							<div class="skill-icon">⏰</div>
-							<div class="skill-content">
-								<h4>Ответственность</h4>
-								<span class="skill-level">за дедлайны и сроки</span>
-							</div>
+							<h4>Ответственность</h4>
+							<p>за дедлайны и сроки</p>
 						</div>
-
-						<div class="skill-card details">
+						<div class="skill-card-soft" data-aos="zoom-in" data-aos-delay="150">
 							<div class="skill-icon">🔍</div>
-							<div class="skill-content">
-								<h4>Внимательность</h4>
-								<span class="skill-level">к деталям ТЗ</span>
-							</div>
+							<h4>Внимательность</h4>
+							<p>к деталям ТЗ</p>
 						</div>
-
-						<div class="skill-card quality">
+						<div class="skill-card-soft" data-aos="zoom-in" data-aos-delay="200">
 							<div class="skill-icon">⭐</div>
-							<div class="skill-content">
-								<h4>Качество</h4>
-								<span class="skill-level">кода под контролем</span>
-							</div>
+							<h4>Качество</h4>
+							<p>чистый поддерживаемый код</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- PORTFOLIO -->
-		<section
-			id="Portfolio"
-			class="container"
-		>
-			<h2 class="section-title">Портфолио</h2>
-			<div class="prices-grid">
+		<!-- PORTFOLIO (С ПРАВИЛЬНОЙ ЛОГИКОЙ МОДАЛЬНОГО ОКНА) -->
+		<section id="Portfolio" class="portfolio-section container">
+			<h2 class="section-title" data-aos="fade-up">Портфолио</h2>
+			
+			<div class="portfolio-grid-cards">
 				<!-- КАРТОЧКА 1 -->
-				<div class="portfolio-item">
-					<img
-						src="img/vue and ts lose.png"
-						alt="Сайт"
-						class="portfolio-thumb one"
-					/>
-					<img
-						src="img/vue and ts.png"
-						alt="Сайт"
-						class="portfolio-thumb"
-					/>
-					<h3 class="skill-title">Игра виселица отгадай имя</h3>
-					<p class="portfolio-title">
-						Интересная игра по угадыванию имен с 6 попытками на ошибку
-					</p>
-					<div class="portfolio-tech-stack">
-						<span class="tech-badge">HTML</span>
-						<span class="tech-badge">CSS</span>
-						<span class="tech-badge">VUE JS</span>
-						<span class="tech-badge">TS</span>
+				<div class="portfolio-item" data-aos="fade-up">
+					<div class="portfolio-img-container">
+						<img src="img/vue and ts.png" alt="Игра виселица превью" class="portfolio-thumb preview-img" />
+						<img src="img/vue and ts lose.png" alt="Игра виселица полный скрин" class="portfolio-thumb full-img" style="display: none;" />
+
+					</div>
+					<div class="portfolio-info">
+						<h3 class="skill-title">Игра виселица отгадай имя</h3>
+						<p class="portfolio-desc">Интересная игра по угадыванию имен с 6 попытками на ошибку</p>
+						<div class="portfolio-tech-stack">
+							<span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">VUE JS</span><span class="tech-badge">TS</span>
+						</div>
 					</div>
 				</div>
 
-				<!-- КАРТОЧКА 2 -->
-				<div class="portfolio-item">
-					<img
-						src="img/full fast food.jpeg"
-						alt="food"
-						class="portfolio-thumb one"
-					/>
-
-					<img
-						src="img/fast food about.png"
-						alt="food"
-						class="portfolio-thumb"
-					/>
-					<h1 class="skill-title">Адаптивный лендинг для бургерной</h1>
-					<p class="portfolio-title">
-						Работа с grid и с позиционированием элемента
-					</p>
-					<div class="portfolio-tech-stack">
-						<span class="tech-badge">HTML</span>
-						<span class="tech-badge">CSS</span>
-						<span class="tech-badge">GRID</span>
-						<span class="tech-badge">JS</span>
+				<!-- КАРТОЧКА 2 (бургерная) -->
+				<div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+					<div class="portfolio-img-container">
+						<img src="img/fast food about.png" alt="Бургерная превью" class="portfolio-thumb preview-img" />
+						<img src="img/full fast food.jpeg" alt="Бургерная полный скрин" class="portfolio-thumb full-img" style="display: none;" />
+					
+					</div>
+					<div class="portfolio-info">
+						<h3 class="skill-title">Адаптивный лендинг для бургерной</h3>
+						<p class="portfolio-desc">Профессиональная работа с CSS Grid и позиционированием элементов.</p>
+						<div class="portfolio-tech-stack">
+							<span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">GRID</span><span class="tech-badge">JS</span>
+						</div>
 					</div>
 				</div>
-				<div class="portfolio-item">
-					<img
-						src="img/full game.jpeg"
-						alt="php"
-						class="portfolio-thumb one"
-					/>
 
-					<img
-						src="img/game about.png"
-						alt="php"
-						class="portfolio-thumb"
-					/>
-					<h3 class="skill-title">Сайт игравой тематики</h3>
-					<p class="portfolio-title">
-						Сайта на PHP,MySQL.С добавление картинок с бд.,с системой
-						авторизации пользователей.
-					</p>
-					<div class="portfolio-tech-stack">
-						<span class="tech-badge">PHP</span>
-						<span class="tech-badge">HTML</span>
-						<span class="tech-badge">CSS</span>
-						<span class="tech-badge">MYSQL</span>
+				<!-- КАРТОЧКА 3 (игровой сайт) -->
+				<div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+					<div class="portfolio-img-container">
+						<img src="img/game about.png" alt="Игровой сайт превью" class="portfolio-thumb preview-img" />
+						<img src="img/full game.jpeg" alt="Игровой сайт полный скрин" class="portfolio-thumb full-img" style="display: none;" />
+						
+					</div>
+					<div class="portfolio-info">
+						<h3 class="skill-title">Сайт игровой тематики</h3>
+						<p class="portfolio-desc">Разработка на PHP/MySQL. Динамическое добавление картинок из БД, авторизация.</p>
+						<div class="portfolio-tech-stack">
+							<span class="tech-badge">PHP</span><span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">MYSQL</span>
+						</div>
 					</div>
 				</div>
-				<div class="portfolio-item">
-					<img
-						src="img/full avion.jpeg"
-						alt="avion"
-						class="portfolio-thumb one"
-					/>
 
-					<img
-						src="img/Avion about.png"
-						alt="avion"
-						class="portfolio-thumb"
-					/>
-					<h3 class="skill-title">Верстка сайта по макету</h3>
-					<p class="portfolio-title">
-						Верстка простого сайта с макета на Figma
-					</p>
-					<div class="portfolio-tech-stack">
-						<span class="tech-badge">HTML</span>
-						<span class="tech-badge">CSS</span>
-						<span class="tech-badge">JS</span>
+				<!-- КАРТОЧКА 4 (Avion) -->
+				<div class="portfolio-item" data-aos="fade-up">
+					<div class="portfolio-img-container">
+						<img src="img/Avion about.png" alt="Avion превью" class="portfolio-thumb preview-img" />
+						<img src="img/full avion.jpeg" alt="Avion полный скрин" class="portfolio-thumb full-img" style="display: none;" />
+						
+					</div>
+					<div class="portfolio-info">
+						<h3 class="skill-title">Верстка сайта по макету</h3>
+						<p class="portfolio-desc">Pixel-perfect верстка интернет-магазина мебели из Figma.</p>
+						<div class="portfolio-tech-stack">
+							<span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JS</span>
+						</div>
 					</div>
 				</div>
-				<div class="portfolio-item">
-					<img
-						src="img/image copy.png"
-						alt="obs"
-						class="portfolio-thumb one"
-					/>
 
-					<img
-						src="img/image.png"
-						alt="obs"
-						class="portfolio-thumb"
-					/>
-					<h3 class="skill-title">Мой Obsidian</h3>
-					<p class="portfolio-title">
-						В моем обсидиане есть главная страница для главных ссылок. А также
-						правильно настроенные 15+ плагинов
-					</p>
-					<div class="portfolio-tech-stack">
-						<span class="tech-badge">Markdown</span>
-						<span class="tech-badge">Dataview</span>
-						<span class="tech-badge">Templater</span>
+				<!-- КАРТОЧКА 5 (Obsidian) -->
+				<div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+					<div class="portfolio-img-container">
+						<img src="img/image.png" alt="Obsidian превью" class="portfolio-thumb preview-img" />
+						<img src="img/image copy.png" alt="Obsidian полный скрин" class="portfolio-thumb full-img" style="display: none;" />
+						
+					</div>
+					<div class="portfolio-info">
+						<h3 class="skill-title">Моя экосистема Obsidian</h3>
+						<p class="portfolio-desc">Главная хаб-страница управления базой знаний. Настроено 15+ продвинутых плагинов.</p>
+						<div class="portfolio-tech-stack">
+							<span class="tech-badge">Markdown</span><span class="tech-badge">Dataview</span><span class="tech-badge">Templater</span>
+						</div>
 					</div>
 				</div>
-				<div class="portfolio-item">
-					<img
-						src="img/FULLTODOREACT.png"
-						alt="todo"
-						class="portfolio-thumb one"
-					/>
 
-					<img
-						src="img/todo.png"
-						alt="todo"
-						class="portfolio-thumb"
-					/>
-					<h3 class="skill-title">Todo</h3>
-					<p class="portfolio-title">
-						Todo приложение на реакт с различными его библиотеками
-					</p>
-					<div class="portfolio-tech-stack">
-						<span class="tech-badge">React</span>
-						<span class="tech-badge">Vite</span>
-						<span class="tech-badge">React icon</span>
+				<!-- КАРТОЧКА 6 (Todo) -->
+				<div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+					<div class="portfolio-img-container">
+						<img src="img/todo.png" alt="Todo React превью" class="portfolio-thumb preview-img" />
+						<img src="img/FULLTODOREACT.png" alt="Todo React полный скрин" class="portfolio-thumb full-img" style="display: none;" />
+					
+					</div>
+					<div class="portfolio-info">
+						<h3 class="skill-title">Todo LIST/h3>
+						<p class="portfolio-desc">Менеджер задач на React с использованием современных библиотек состояния.</p>
+						<div class="portfolio-tech-stack">
+							<span class="tech-badge">React</span><span class="tech-badge">Vite</span><span class="tech-badge">React icons</span>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div
-				id="portfolioModal"
-				class="modal"
-			>
+			<!-- МОДАЛЬНОЕ ОКНО -->
+			<div id="portfolioModal" class="modal">
 				<span class="close">&times;</span>
-				<img
-					class="modal-content"
-					id="modalImg"
-				/>
+				<div class="modal-wrapper">
+					<img class="modal-content" id="modalImg" alt="Увеличенное изображение" />
+				</div>
 			</div>
 		</section>
 
-		<section
-			id="prices"
-			class="prices-section"
-		>
+		<!-- PRODUCTS -->
+		<section id="prices" class="prices-section">
 			<div class="container">
-				<h2 class="section-title">Продукты</h2>
-				<div class="prices-grid">
-					<!-- ПРОДУКТ 1 -->
-					<div class="price-card">
-						<img
-							src="img/image.png"
-							alt="Бот"
-							class="portfolio-thumb"
-						/>
+				<h2 class="section-title" data-aos="fade-up">Продукты и Услуги</h2>
+				<div class="prices-main-grid">
+					
+					<div class="price-card" data-aos="zoom-in">
+						<div class="price-img-box"><img src="img/image.png" alt="Obsidian vault" /></div>
 						<h3 class="skill-title">Obsidian vault</h3>
 						<div class="price">от 500₽</div>
-						<p class="portfolio-title">
-							4 папки • 15+ плагинов • DataviewJS
-							<br />
-							Граф • Шаблоны • Инструкция
-						</p>
-						<a href="#contacts">
-							<button
-								class="buy-btn"
-								onclick="Click()"
-							>
-								Заказать
-							</button>
-						</a>
+						<p class="portfolio-title-text">4 папки • 15+ плагинов • DataviewJS • Граф • Шаблоны</p>
+						<a href="#contacts" class="buy-btn" onclick="Click()">Заказать</a>
 					</div>
 
-					<!-- ПРОДУКТ 2 -->
-					<div class="price-card">
-						<img
-							src="img/сайт под ключ.png"
-							alt="Бот"
-							class="portfolio-thumb"
-						/>
+					<div class="price-card" data-aos="zoom-in" data-aos-delay="100">
+						<div class="price-img-box"><img src="img/сайт под ключ.png" alt="Сайт под ключ" /></div>
 						<h3 class="skill-title">Сайт под ключ</h3>
 						<div class="price">от 1 500₽</div>
-						<p class="portfolio-title">HTML/CSS/JS • Адаптив</p>
-						<a href="#contacts">
-							<button
-								class="buy-btn"
-								onclick="Click()"
-							>
-								Заказать
-							</button>
-						</a>
+						<p class="portfolio-title-text">HTML/CSS/JS • Адаптив под все экраны • SEO оптимизация</p>
+						<a href="#contacts" class="buy-btn" onclick="Click()">Заказать</a>
 					</div>
 
-					<!-- ПРОДУКТ 3 -->
-					<div class="price-card">
-						<img
-							src="img/бекенд.png"
-							alt="Бот"
-							class="portfolio-thumb"
-						/>
+					<div class="price-card" data-aos="zoom-in" data-aos-delay="200">
+						<div class="price-img-box"><img src="img/бекенд.png" alt="Бэкенд на сайт" /></div>
 						<h3 class="skill-title">Бэкенд на сайт</h3>
-						<div class="price">от 1000₽</div>
-						<p class="portfolio-title">
-							PHP • MySQL • Отправка email писем и т.д
-						</p>
-						<a href="#contacts">
-							<button
-								class="buy-btn"
-								onclick="Click()"
-							>
-								Заказать
-							</button>
-						</a>
+						<div class="price">от 1 000₽</div>
+						<p class="portfolio-title-text">PHP • MySQL • Формы обратной связи • Email-рассылки</p>
+						<a href="#contacts" class="buy-btn" onclick="Click()">Заказать</a>
 					</div>
 
-					<!-- ПРОДУКТ 4 -->
-					<div class="price-card">
-						<img
-							src="img/вестка сайта.png"
-							alt="Бот"
-							class="portfolio-thumb"
-						/>
-						<h3 class="skill-title">Верстка сайта</h3>
+					<div class="price-card" data-aos="zoom-in">
+						<div class="price-img-box"><img src="img/вестка сайта.png" alt="Верстка сайта" /></div>
+						<h3 class="skill-title">Профессиональная верстка</h3>
 						<div class="price">от 500₽</div>
-						<p class="portfolio-title">HTML/CSS/JS • Адаптив</p>
-						<a href="#contacts">
-							<button
-								class="buy-btn"
-								onclick="Click()"
-							>
-								Заказать
-							</button>
-						</a>
+						<p class="portfolio-title-text">HTML/CSS/JS • БЭМ методология • Современные анимации</p>
+						<a href="#contacts" class="buy-btn" onclick="Click()">Заказать</a>
 					</div>
 
-					<div class="price-card">
-						<img
-							src="img/wordpress перенос.png"
-							alt="Бот"
-							class="portfolio-thumb"
-						/>
-						<h3 class="skill-title">Перенос сайта на защищенный протокол</h3>
+					<div class="price-card" data-aos="zoom-in" data-aos-delay="100">
+						<div class="price-img-box"><img src="img/wordpress перенос.png" alt="Перенос сайта" /></div>
+						<h3 class="skill-title">Перенос на HTTPS протокол</h3>
 						<div class="price">300₽</div>
-						<p class="portfolio-title">Wordpress</p>
-						<a href="#contacts">
-							<button
-								class="buy-btn"
-								onclick="Click()"
-							>
-								Заказать
-							</button>
-						</a>
+						<p class="portfolio-title-text">Настройка защищенных SSL-сертификатов для WordPress</p>
+						<a href="#contacts" class="buy-btn" onclick="Click()">Заказать</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<footer
-			id="contacts"
-			class="footer"
-		>
+		<!-- FOOTER -->
+		<footer id="contacts" class="footer">
 			<div class="container">
 				<div class="footer-content">
-					<!-- ЛЕВАЯ ЧАСТЬ -->
 					<div class="footer-brand">
 						<a href="/index.html">
-							<img
-								src="img/programmer.png"
-								alt=""
-								class="logo"
-							/>
+							<img src="img/programmer.png" alt="Самат Нуриев" class="logo" />
 						</a>
 						<h3>Нуриев Самат</h3>
-						<p>Frontend • Obsidian • Shorts</p>
+						<p class="footer-subtitle">Frontend • Obsidian Expert • Video Editing</p>
 					</div>
 
-					<!-- ССЫЛКИ -->
 					<div class="footer-links">
 						<div class="link-group">
 							<h4>Продукты</h4>
@@ -505,65 +327,52 @@
 						</div>
 						<div class="link-group">
 							<h4>Соц.сети</h4>
-							<a
-								href="https://t.me/NurievSamat"
-								target="_blank"
-							>
-								Telegram
-							</a>
-							<a
-								href="https://dl.bip.com/Ga6MQpod"
-								target="_blank"
-							>
-								Bip
-							</a>
-							<a
-								href="https://vk.com/samatnuriev2013"
-								target="_blank"
-							>
-								Вк
-							</a>
-							<a href="https://kwork.ru/user/samatnuriev2013">Kwork</a>
+							<a href="https://t.me/NurievSamat" target="_blank">Telegram</a>
+							<a href="https://dl.bip.com/Ga6MQpod" target="_blank">Bip</a>
+							<a href="https://vk.com/samatnuriev2013" target="_blank">Вконтакте</a>
+							<a href="https://kwork.ru/user/samatnuriev2013" target="_blank">Kwork</a>
 						</div>
 					</div>
 
-					<!-- КОНТАКТЫ -->
 					<div class="footer-contact">
 						<h4>Связаться</h4>
-						<a
-							href="tel:+79872894826"
-							class="phone"
-						>
-							📞 +7 987 289 48 26
-						</a>
-						<a href="mailto:samatnuirev2013@gmail.com">
-							samatnuirev2013@gmail.com
-						</a>
+						<a href="tel:+79872894826" class="phone">📞 +7 987 289 48 26</a>
+						<a href="mailto:samatnuirev2013@gmail.com" class="email">samatnuirev2013@gmail.com</a>
 					</div>
 				</div>
-
-				<!-- КОПИРАЙТ -->
 				<div class="footer-bottom">
-					<p>&copy; 2026 Самат Нуриев. Все права защищены.</p>
+					<p>&copy; 2026 Самат Нуриев. Все права защищены. Разработано профессионально.</p>
 				</div>
 			</div>
 		</footer>
 
+		<!-- SCRIPTS (С ПРАВИЛЬНОЙ ЛОГИКОЙ МОДАЛЬНОГО ОКНА) -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
+			// Инициализация AOS анимаций
+			AOS.init({
+				duration: 800,
+				once: true,
+				offset: 60
+			});
+
+			// Функция для алерта
 			function Click() {
 				alert(
 					'Свяжитесь с нами через Telegram, ВКонтакте, Bip, Kwork или электронную почту, чтобы оформить заказ.'
 				)
 			}
+			
+			// Плавная прокрутка по якорям
 			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 				anchor.addEventListener('click', function (e) {
-					e.preventDefault() // Останавливаем прыжок
+					e.preventDefault()
 
 					const targetId = this.getAttribute('href')
 					const targetSection = document.querySelector(targetId)
 
 					if (targetSection) {
-						const headerHeight = 80 // Высота твоего header
+						const headerHeight = 80
 						const targetPosition = targetSection.offsetTop - headerHeight
 
 						window.scrollTo({
@@ -574,58 +383,104 @@
 				})
 			})
 
+			// ========== ГЛАВНАЯ ЛОГИКА МОДАЛЬНОГО ОКНА (ВЗЯТАЯ ИЗ РАБОЧЕЙ ВЕРСИИ) ==========
 			const modal = document.getElementById('portfolioModal')
 			const modalImg = document.getElementById('modalImg')
 			const closeBtn = document.querySelector('.close')
-			// КЛИК на ЛЮБУЮ карточку → показывает ЕЁ фото БОЛЬШЕ
-			document.querySelectorAll('.portfolio-item').forEach(item => {
-				item.onclick = function () {
-					const img = this.querySelector('.portfolio-thumb')
-					modal.style.display = 'block'
-					modalImg.src = img.src
-				}
-			})
 
-			// ЗАКРЫТИЕ
-			closeBtn.onclick = () => (modal.style.display = 'none')
-			window.onclick = e => {
-				if (e.target === modal) modal.style.display = 'none'
+			// Функция получения полного изображения из карточки
+			function getFullImageFromCard(card) {
+				// Ищем скрытое изображение с классом full-img (полный скриншот)
+				let fullImg = card.querySelector('.full-img')
+				if (fullImg && fullImg.src) {
+					return fullImg.src
+				}
+				// Если по какой-то причине нет full-img, ищем обычное preview-img
+				let previewImg = card.querySelector('.preview-img')
+				if (previewImg && previewImg.src) {
+					return previewImg.src
+				}
+				return null
 			}
-			document.addEventListener('keydown', e => {
-				if (e.key === 'Escape') modal.style.display = 'none'
-			})
-			// Бургер-меню
-			document.addEventListener('DOMContentLoaded', function () {
-				// Создаём кнопку бургера, если её нет в HTML
-				if (!document.querySelector('.burger')) {
-					const burgerDiv = document.createElement('div')
-					burgerDiv.className = 'burger'
-					burgerDiv.innerHTML = '<span></span><span></span><span></span>'
-					const headerContainer = document.querySelector('.header__container')
-					if (headerContainer) {
-						headerContainer.appendChild(burgerDiv)
+
+			// Открытие модального окна
+			function openModal(imgSrc) {
+				if (!imgSrc) return
+				modalImg.src = imgSrc
+				modal.style.display = 'block'
+				setTimeout(() => {
+					modal.classList.add('active')
+				}, 10)
+				document.body.style.overflow = 'hidden'
+			}
+
+			// Закрытие модального окна
+			function closeModal() {
+				modal.classList.remove('active')
+				setTimeout(() => {
+					if (!modal.classList.contains('active')) {
+						modal.style.display = 'none'
+						document.body.style.overflow = ''
 					}
-				}
+				}, 300)
+			}
 
-				const burger = document.querySelector('.burger')
-				const navMenu = document.querySelector('.header__nav ul')
+			// НАВЕШИВАЕМ ОБРАБОТЧИКИ НА КАРТОЧКИ ПОРТФОЛИО
+			document.querySelectorAll('.portfolio-item').forEach(card => {
+				card.addEventListener('click', function(e) {
+					// НЕ закрываем модалку, если кликнули внутри неё
+					if (e.target.closest('.modal')) return
+					
+					const fullImgSrc = getFullImageFromCard(this)
+					if (fullImgSrc) {
+						openModal(fullImgSrc)
+					}
+				})
+			})
 
-				if (burger && navMenu) {
-					burger.addEventListener('click', function () {
-						burger.classList.toggle('active')
-						navMenu.classList.toggle('active')
-					})
+			// Закрытие по крестику
+			if (closeBtn) {
+				closeBtn.addEventListener('click', closeModal)
+			}
 
-					// Закрытие меню при клике на ссылку
-					const navLinks = document.querySelectorAll('.header__nav a')
-					navLinks.forEach(link => {
-						link.addEventListener('click', () => {
-							burger.classList.remove('active')
-							navMenu.classList.remove('active')
-						})
-					})
+			// Закрытие по клику на фон
+			modal.addEventListener('click', function(e) {
+				if (e.target === modal) {
+					closeModal()
 				}
 			})
+
+			// Закрытие по ESC
+			document.addEventListener('keydown', function(e) {
+				if (e.key === 'Escape' && modal.style.display === 'block') {
+					closeModal()
+				}
+			})
+
+			// Бургер-меню
+			const burger = document.querySelector('.burger');
+			const navMenu = document.querySelector('.nav-menu');
+
+			if (burger && navMenu) {
+				burger.addEventListener('click', function() {
+					burger.classList.toggle('active');
+					navMenu.classList.toggle('active');
+					
+					if (navMenu.classList.contains('active')) {
+						document.body.style.overflow = 'hidden';
+					} else {
+						document.body.style.overflow = '';
+					}
+				});
+
+				document.querySelectorAll('.nav-menu a').forEach(link => {
+					link.addEventListener('click', () => {
+						burger.classList.remove('active');
+						navMenu.classList.remove('active');
+						document.body.style.overflow = '';
+					});
+				});
+			}
 		</script>
 	</body>
 </html>
