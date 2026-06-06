@@ -1,4 +1,12 @@
 /* ===== СТИЛИ И ГЛОБАЛЬНЫЕ НАСТРОЙКИ ===== */
+@font-face {
+	font-family: 'Your Font';
+	font-display: swap; /* Это главное! */
+}
+img {
+	aspect-ratio: attr(width) / attr(height);
+	/* или явно: */
+}
 :root {
 	--primary-color: #6c5ce7;
 	--primary-hover: #5b4cdb;
