@@ -23,6 +23,7 @@
 			rel="shortcut icon"
 			href="img/programmer.png"
 			type="image/x-icon"
+			loading="lazy"
 		/>
 		<link
 			rel="preconnect"
@@ -57,6 +58,20 @@
 			name="robots"
 			content="index, follow"
 		/>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Самат Нуриев",
+				"jobTitle": "Frontend-разработчик",
+				"url": "https://samat-nuriev-7sak.vercel.app/",
+				"sameAs": [
+					"https://t.me/NurievSamat",
+					https://youtube.com/channel/UCdHjtb8RGK2CFd-vEkXZv4Q?si=jgQ5eNFaLDnvXeK1,
+					"https://kwork.ru/user/samatnuriev2013"
+				]
+			}
+		</script>
 	</head>
 
 	<body>
@@ -71,6 +86,7 @@
 						src="img/programmer.png"
 						alt="Самат Нуриев"
 						class="logo"
+						loading="lazy"
 					/>
 					<span class="logo-text">Самат Нуриев</span>
 				</a>
@@ -80,7 +96,7 @@
 						<li><a href="#About">Обо мне</a></li>
 						<li><a href="#skills">Навыки</a></li>
 						<li><a href="#Portfolio">Портфолио</a></li>
-						<li><a href="#prices">Продукты</a></li>
+						<li><a href="#prices">Услуги</a></li>
 						<li><a href="#contacts">Контакты</a></li>
 						<li class="mobile-only">
 							<a
@@ -124,14 +140,14 @@
 						<span class="hello">Привет!</span>
 						Меня зовут Самат.
 						<br />
-						создаю
-						<span class="accent-text">высококонверсионные</span>
-						веб-решения
+						Я
+						<span class="accent-text">Frontend-разработчик</span>
+						и Obsidian-эксперт
 					</h1>
 					<p class="message">
-						Я Fullstack-разработчик, Obsidian-эксперт и монтажёр. Разрабатываю
-						архитектуру сайтов «под ключ» от идеи до бэкенда. Нажмите кнопку
-						ниже, чтобы посмотреть стек технологий.
+						Разрабатываю современные интерфейсы на HTML, CSS, JS и Vue.js.
+						Работаю с WordPress, PHP и MySQL, чтобы создавать полноценные сайты,
+						которые удобны в управлении и приносят результат.
 					</p>
 					<div class="hero-btns">
 						<a
@@ -157,6 +173,7 @@
 						src="img/About.png"
 						alt="hero-img"
 						class="hero-img"
+						loading="lazy"
 					/>
 				</div>
 			</div>
@@ -192,7 +209,7 @@
 							<div class="skill-icon-box">🌐</div>
 							<div class="skill-content">
 								<h4>HTML</h4>
-								<span class="skill-level">HTML5</span>
+								<span class="skill-level">Семантическая, валидная вёрстка</span>
 							</div>
 						</div>
 						<div
@@ -216,9 +233,7 @@
 							<div class="skill-icon-box">⚡</div>
 							<div class="skill-content">
 								<h4>JavaScript</h4>
-								<span class="skill-level">
-									Vue js, node js, TypeScript, React
-								</span>
+								<span class="skill-level">Vue js, TypeScript, React</span>
 							</div>
 						</div>
 						<div
@@ -229,7 +244,7 @@
 							<div class="skill-icon-box">⚙️</div>
 							<div class="skill-content">
 								<h4>Бэкенд</h4>
-								<span class="skill-level">PHP8, Mysql</span>
+								<span class="skill-level">PHP, Mysql</span>
 							</div>
 						</div>
 						<div
@@ -274,19 +289,8 @@
 							<div class="skill-content">
 								<h4>Obsidian</h4>
 								<span class="skill-level">
-									Более 15 плагинов, красивый дизайн
+									Продуманная система для заметок и проектов
 								</span>
-							</div>
-						</div>
-						<div
-							class="skill-card html"
-							data-aos="fade-up"
-							data-aos-delay="450"
-						>
-							<div class="skill-icon-box">🎬</div>
-							<div class="skill-content">
-								<h4>Монтаж</h4>
-								<span class="skill-level">CapCut, свой ютуб канал</span>
 							</div>
 						</div>
 					</div>
@@ -362,27 +366,29 @@
 				>
 					<div class="portfolio-img-container">
 						<img
-							src="img/vue and ts.jpg"
+							src="img/robo.png"
 							alt="Игра виселица превью"
 							class="portfolio-thumb preview-img"
+							loading="lazy"
 						/>
 						<img
-							src="img/vue and ts lose.jpg"
+							src="img/full robo.jpeg"
 							alt="Игра виселица полный скрин"
 							class="portfolio-thumb full-img"
+							loading="lazy"
 							style="display: none"
 						/>
 					</div>
 					<div class="portfolio-info">
-						<h3 class="skill-title">Игра виселица отгадай имя</h3>
+						<h3 class="skill-title">Вертка инатяжка сайта на wordpress</h3>
 						<p class="portfolio-desc">
-							Интересная игра по угадыванию имен с 6 попытками на ошибку
+							Верстка сайта по макету из figma и натяжка на WordPress
 						</p>
 						<div class="portfolio-tech-stack">
 							<span class="tech-badge">HTML</span>
 							<span class="tech-badge">CSS</span>
-							<span class="tech-badge">VUE JS</span>
-							<span class="tech-badge">TS</span>
+							<span class="tech-badge">JS</span>
+							<span class="tech-badge">WP</span>
 						</div>
 					</div>
 				</div>
@@ -395,13 +401,15 @@
 				>
 					<div class="portfolio-img-container">
 						<img
-							src="img/fast food about.jpg"
+							src="img/fast food adout.png"
 							alt="Бургерная превью"
+							loading="lazy"
 							class="portfolio-thumb preview-img"
 						/>
 						<img
 							src="img/full fast food.jpg"
 							alt="Бургерная полный скрин"
+							loading="lazy"
 							class="portfolio-thumb full-img"
 							style="display: none"
 						/>
@@ -428,13 +436,15 @@
 				>
 					<div class="portfolio-img-container">
 						<img
-							src="img/game about.jpg"
+							src="img/game about (2).png"
 							alt="Игровой сайт превью"
+							loading="lazy"
 							class="portfolio-thumb preview-img"
 						/>
 						<img
 							src="img/full game.jpg"
 							alt="Игровой сайт полный скрин"
+							loading="lazy"
 							class="portfolio-thumb full-img"
 							style="display: none"
 						/>
@@ -463,11 +473,13 @@
 						<img
 							src="img/Avion about.jpg"
 							alt="Avion превью"
+							loading="lazy"
 							class="portfolio-thumb preview-img"
 						/>
 						<img
 							src="img/full avion.jpg"
 							alt="Avion полный скрин"
+							loading="lazy"
 							class="portfolio-thumb full-img"
 							style="display: none"
 						/>
@@ -493,13 +505,15 @@
 				>
 					<div class="portfolio-img-container">
 						<img
-							src="img/image.jpg"
+							src="img/обсидиан.png"
 							alt="Obsidian превью"
+							loading="lazy"
 							class="portfolio-thumb preview-img"
 						/>
 						<img
-							src="img/image copy.jpg"
+							src="img/обсидиан.png"
 							alt="Obsidian полный скрин"
+							loading="lazy"
 							class="portfolio-thumb full-img"
 							style="display: none"
 						/>
@@ -507,13 +521,12 @@
 					<div class="portfolio-info">
 						<h3 class="skill-title">Моя экосистема Obsidian</h3>
 						<p class="portfolio-desc">
-							Главная хаб-страница управления базой знаний. Настроено 15+
-							продвинутых плагинов.
+							Умная система для заметок и проектов в Obsidian
 						</p>
 						<div class="portfolio-tech-stack">
-							<span class="tech-badge">Markdown</span>
 							<span class="tech-badge">Dataview</span>
-							<span class="tech-badge">Templater</span>
+							<span class="tech-badge">Auto Note Mover</span>
+							<span class="tech-badge">Ai</span>
 						</div>
 					</div>
 				</div>
@@ -526,44 +539,60 @@
 				>
 					<div class="portfolio-img-container">
 						<img
-							src="img/todo.jpg"
+							src="img/cake.png"
 							alt="Todo React превью"
+							loading="lazy"
 							class="portfolio-thumb preview-img"
 						/>
 						<img
-							src="img/FULLTODOREACT.jpg"
+							src="img/full торты.jpeg"
 							alt="Todo React полный скрин"
+							loading="lazy"
 							class="portfolio-thumb full-img"
 							style="display: none"
 						/>
 					</div>
 					<div class="portfolio-info">
-						<h3 class="skill-title">Todo LIST</h3>
+						<h3 class="skill-title">Доработка сайта на WordPress</h3>
 						<p class="portfolio-desc">
-							Менеджер задач на React с использованием современных библиотек
-							состояния.
+							Исправление цен а также добавление новых картинок на сайт
 						</p>
 						<div class="portfolio-tech-stack">
-							<span class="tech-badge">React</span>
-							<span class="tech-badge">Vite</span>
-							<span class="tech-badge">React icons</span>
+							<span class="tech-badge">WP</span>
+							<span class="tech-badge">Elementor</span>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- МОДАЛЬНОЕ ОКНО -->
+			<!-- МОДАЛЬНОЕ ОКНО (улучшенное) -->
 			<div
 				id="portfolioModal"
 				class="modal"
 			>
-				<span class="close">&times;</span>
-				<div class="modal-wrapper">
-					<img
-						class="modal-content"
-						id="modalImg"
-						alt="Увеличенное изображение"
-					/>
+				<div class="modal-content-wrapper">
+					<span class="close">&times;</span>
+					<div class="modal-body">
+						<img
+							class="modal-content"
+							id="modalImg"
+							alt="Увеличенное изображение"
+						/>
+					</div>
+					<div class="modal-controls">
+						<button
+							class="zoom-btn"
+							id="zoomInBtn"
+						>
+							➕
+						</button>
+						<button
+							class="zoom-btn"
+							id="zoomOutBtn"
+						>
+							➖
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -578,7 +607,7 @@
 					class="section-title"
 					data-aos="fade-up"
 				>
-					Продукты и Услуги
+					Услуги
 				</h2>
 				<div class="prices-main-grid">
 					<div
@@ -587,14 +616,15 @@
 					>
 						<div class="price-img-box">
 							<img
-								src="img/image.jpg"
+								src="img/обсидиан.png"
+								loading="lazy"
 								alt="Obsidian vault"
 							/>
 						</div>
 						<h3 class="skill-title">Obsidian vault</h3>
 						<div class="price">от 500₽</div>
 						<p class="portfolio-title-text">
-							4 папки • 15+ плагинов • DataviewJS • Граф • Шаблоны
+							Продуманная система для организации проектов и идей
 						</p>
 						<a
 							href="#contacts"
@@ -613,6 +643,7 @@
 						<div class="price-img-box">
 							<img
 								src="img/сайт под ключ.jpg"
+								loading="lazy"
 								alt="Сайт под ключ"
 							/>
 						</div>
@@ -638,6 +669,7 @@
 						<div class="price-img-box">
 							<img
 								src="img/бекенд.jpg"
+								loading="lazy"
 								alt="Бэкенд на сайт"
 							/>
 						</div>
@@ -662,6 +694,7 @@
 						<div class="price-img-box">
 							<img
 								src="img/вестка сайта.jpg"
+								loading="lazy"
 								alt="Верстка сайта"
 							/>
 						</div>
@@ -686,14 +719,41 @@
 					>
 						<div class="price-img-box">
 							<img
-								src="img/wordpress перенос.jpg"
+								src="img/доработка.png"
+								loading="lazy"
 								alt="Перенос сайта"
 							/>
 						</div>
-						<h3 class="skill-title">Перенос на HTTPS протокол</h3>
-						<div class="price">300₽</div>
+						<h3 class="skill-title">Доработка сайтов</h3>
+						<div class="price">от 500₽</div>
 						<p class="portfolio-title-text">
-							Настройка защищенных SSL-сертификатов для WordPress
+							Выполню правки и доработки сайта/скриптов любого уровня
+						</p>
+						<a
+							href="#contacts"
+							class="buy-btn"
+							onclick="Click()"
+						>
+							Заказать
+						</a>
+					</div>
+					<div
+						class="price-card"
+						data-aos="zoom-in"
+						data-aos-delay="100"
+					>
+						<div class="price-img-box">
+							<img
+								src="img/Вордпресс.png"
+								loading="lazy"
+								alt="Перенос сайта"
+							/>
+						</div>
+						<h3 class="skill-title">Верстка сайта на Wordpress</h3>
+						<div class="price">от 500₽</div>
+						<p class="portfolio-title-text">
+							Вёрстка сайта на WordPress: чисто, быстро, с адаптивом под все
+							устройства.
 						</p>
 						<a
 							href="#contacts"
@@ -723,14 +783,12 @@
 							/>
 						</a>
 						<h3>Нуриев Самат</h3>
-						<p class="footer-subtitle">
-							Frontend • Obsidian Expert • Video Editing
-						</p>
+						<p class="footer-subtitle">Frontend • Obsidian Expert</p>
 					</div>
 
 					<div class="footer-links">
 						<div class="link-group">
-							<h4>Продукты</h4>
+							<h4>Услуги</h4>
 							<a href="#prices">Obsidian</a>
 							<a href="#prices">Сайты</a>
 							<a href="#prices">Wordpress</a>
@@ -744,16 +802,10 @@
 								Telegram
 							</a>
 							<a
-								href="https://dl.bip.com/Ga6MQpod"
+								href="https://youtube.com/channel/UCdHjtb8RGK2CFd-vEkXZv4Q?si=jgQ5eNFaLDnvXeK1"
 								target="_blank"
 							>
-								Bip
-							</a>
-							<a
-								href="https://vk.com/samatnuriev2013"
-								target="_blank"
-							>
-								Вконтакте
+								Youtube
 							</a>
 							<a
 								href="https://kwork.ru/user/samatnuriev2013"
@@ -803,7 +855,7 @@
 			// Функция для алерта
 			function Click() {
 				alert(
-					'Свяжитесь с нами через Telegram, ВКонтакте, Bip, Kwork или электронную почту, чтобы оформить заказ.'
+					'Свяжитесь с нами через Telegram, Kwork или электронную почту, чтобы оформить заказ.'
 				)
 			}
 
@@ -827,19 +879,25 @@
 				})
 			})
 
-			// ========== ГЛАВНАЯ ЛОГИКА МОДАЛЬНОГО ОКНА (ВЗЯТАЯ ИЗ РАБОЧЕЙ ВЕРСИИ) ==========
+			// ===== УЛУЧШЕННАЯ ЛОГИКА МОДАЛЬНОГО ОКНА С ЗУМОМ (СКРОЛЛ РАБОТАЕТ) =====
 			const modal = document.getElementById('portfolioModal')
 			const modalImg = document.getElementById('modalImg')
 			const closeBtn = document.querySelector('.close')
+			const zoomInBtn = document.getElementById('zoomInBtn')
+			const zoomOutBtn = document.getElementById('zoomOutBtn')
+			const resetZoomBtn = document.getElementById('resetZoomBtn')
+
+			let currentZoom = 1
+			const ZOOM_STEP = 0.2
+			const MIN_ZOOM = 0.5
+			const MAX_ZOOM = 3
 
 			// Функция получения полного изображения из карточки
 			function getFullImageFromCard(card) {
-				// Ищем скрытое изображение с классом full-img (полный скриншот)
 				let fullImg = card.querySelector('.full-img')
 				if (fullImg && fullImg.src) {
 					return fullImg.src
 				}
-				// Если по какой-то причине нет full-img, ищем обычное preview-img
 				let previewImg = card.querySelector('.preview-img')
 				if (previewImg && previewImg.src) {
 					return previewImg.src
@@ -851,7 +909,9 @@
 			function openModal(imgSrc) {
 				if (!imgSrc) return
 				modalImg.src = imgSrc
-				modal.style.display = 'block'
+				modalImg.style.transform = 'scale(1)'
+				currentZoom = 1
+				modal.style.display = 'flex'
 				setTimeout(() => {
 					modal.classList.add('active')
 				}, 10)
@@ -869,12 +929,30 @@
 				}, 300)
 			}
 
-			// НАВЕШИВАЕМ ОБРАБОТЧИКИ НА КАРТОЧКИ ПОРТФОЛИО
+			// Зум
+			function zoomIn() {
+				if (currentZoom < MAX_ZOOM) {
+					currentZoom += ZOOM_STEP
+					modalImg.style.transform = `scale(${currentZoom})`
+				}
+			}
+
+			function zoomOut() {
+				if (currentZoom > MIN_ZOOM) {
+					currentZoom -= ZOOM_STEP
+					modalImg.style.transform = `scale(${currentZoom})`
+				}
+			}
+
+			function resetZoom() {
+				currentZoom = 1
+				modalImg.style.transform = 'scale(1)'
+			}
+
+			// Обработчики для карточек портфолио
 			document.querySelectorAll('.portfolio-item').forEach(card => {
 				card.addEventListener('click', function (e) {
-					// НЕ закрываем модалку, если кликнули внутри неё
 					if (e.target.closest('.modal')) return
-
 					const fullImgSrc = getFullImageFromCard(this)
 					if (fullImgSrc) {
 						openModal(fullImgSrc)
@@ -887,44 +965,27 @@
 				closeBtn.addEventListener('click', closeModal)
 			}
 
-			// Закрытие по клику на фон
+			// Закрытие по клику на фон (но НЕ на картинку)
 			modal.addEventListener('click', function (e) {
-				if (e.target === modal) {
+				if (
+					e.target === modal ||
+					e.target === document.querySelector('.modal-body')
+				) {
 					closeModal()
 				}
 			})
 
 			// Закрытие по ESC
 			document.addEventListener('keydown', function (e) {
-				if (e.key === 'Escape' && modal.style.display === 'block') {
+				if (e.key === 'Escape' && modal.style.display === 'flex') {
 					closeModal()
 				}
 			})
 
-			// Бургер-меню
-			const burger = document.querySelector('.burger')
-			const navMenu = document.querySelector('.nav-menu')
-
-			if (burger && navMenu) {
-				burger.addEventListener('click', function () {
-					burger.classList.toggle('active')
-					navMenu.classList.toggle('active')
-
-					if (navMenu.classList.contains('active')) {
-						document.body.style.overflow = 'hidden'
-					} else {
-						document.body.style.overflow = ''
-					}
-				})
-
-				document.querySelectorAll('.nav-menu a').forEach(link => {
-					link.addEventListener('click', () => {
-						burger.classList.remove('active')
-						navMenu.classList.remove('active')
-						document.body.style.overflow = ''
-					})
-				})
-			}
+			// Кнопки зума
+			if (zoomInBtn) zoomInBtn.addEventListener('click', zoomIn)
+			if (zoomOutBtn) zoomOutBtn.addEventListener('click', zoomOut)
+			if (resetZoomBtn) resetZoomBtn.addEventListener('click', resetZoom)
 		</script>
 	</body>
 </html>
