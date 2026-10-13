@@ -1,3 +1,15 @@
+// ===== СОСТОЯНИЕ ШАПКИ ПРИ СКРОЛЛЕ =====
+const headerEl = document.querySelector('.header')
+
+if (headerEl) {
+	const syncHeader = () => {
+		headerEl.classList.toggle('is-scrolled', window.scrollY > 24)
+	}
+
+	window.addEventListener('scroll', syncHeader, { passive: true })
+	syncHeader()
+}
+
 // ===== ИНИЦИАЛИЗАЦИЯ AOS АНИМАЦИЙ =====
 AOS.init({
 	duration: 500,
